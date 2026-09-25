@@ -3,73 +3,78 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --bg-panel-color: #ffffff;
+    --dark-text: #1a1a1a;
+    --gray-text: #555555;
+    --primary-green: #3a5a40;
+      --border-color: #e0e0e0
+}
 
-html, body {
-    height: auto;
-    width: 100%;
+body {
     font-family: "system-ui", sans-serif;
     background-color: var(--bg-panel-color);
-    color: var(--text-color);
+    color: var(--dark-text);
+}
+a {
+    text-decoration: none;
+    color: var(--dark-text);
 }
 
-#top_container {
-    
-    margin: 5px;
-    padding: 10px; 
-    height: 40%;
-    width: 100%;
-    background-color: tomato;
+/* header */
+header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-
+    padding: 15px 60px;
+    background-color: var(--bg-panel-color);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--border-color);
 }
+/* logo */
 .logo {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-left: 10%;
+    gap: 10px;
+    color: var(--primary-green);
 }
-
-.logo_image {
-    background-color: white;
-    width: 50px;
-    height: auto;
+.logo i {
+    font-size: 1.5rem;
 }
-
 .logo_name {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--dark-text);
 }
 
-.navbar-options {
+.logo span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: var(--gray-text);
+
+}
+/* Navigation */
+.navbar {
     display: flex;
-    flex-shrink: 0;
-    background-color: #36cd61;
-    justify-content:flex-end;
+    gap: 30px;
     align-items: center;
-    margin-left: auto;
 }
-
+.navbar a {
+    font-size: 0.85rem;
+    margin-left: 30px;
+    font-weight: 500;
+    color: var(--gray-text);
+}
+/* hero section */
 .content {
     height: auto;
     width: 10%;
     background-color: var(primary-green);
 }
 
-a {
-    text-decoration: none;
-    color: #0f0f0f;
-    padding: 10px;
-    font-size: 20px;
-}
 
-:root {
-    --bg-panel-color: #FFFFFF;
-    --text-color: #0f0f0f;
-    --primary-green: #3a5a40;
-    --small-text: 4px;
-}
+
+
 
