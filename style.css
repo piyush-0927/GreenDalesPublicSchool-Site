@@ -1,79 +1,71 @@
+:root{
+    --primary-key-color: #3a5a40;
+    --primary-main-white: #ffffff;
+    --primary-main-black: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-:root {
-    --bg-panel-color: #ffffff;
-    --dark-text: #1a1a1a;
-    --gray-text: #555555;
-    --primary-green: #3a5a40;
-      --border-color: #e0e0e0
 }
 
-body {
-    font-family: "system-ui", sans-serif;
-    background-color: var(--bg-panel-color);
-    color: var(--dark-text);
-}
-a {
-    text-decoration: none;
-    color: var(--dark-text);
-}
+.navbar {
+    height: 70px;
+    overflow: hidden;
+    position: sticky;
 
-/* header */
-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
-    background-color: var(--bg-panel-color);
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #757575;
 }
-/* logo */
+
 .logo {
+    margin-left: 20%;
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--primary-green);
-}
-.logo i {
-    font-size: 1.5rem;
-}
-.logo_name {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--dark-text);
 }
 
-.logo span {
-    display: block;
-    margin-top: 4px;
-    font-size: 0.8rem;
-    color: var(--gray-text);
-
-}
-/* Navigation */
-.navbar {
-    display: flex;
-    gap: 30px;
+.logo i{
+    color: var(--primary-key-color);
+    font-size: 30px;
+    justify-content: center;
     align-items: center;
+    display: flex;
 }
-.navbar a {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--gray-text);
+
+.logo h1{
+    font-size: 24px;
+    margin: 0;
 }
-/* hero section */
+
+.logo-link {
+    text-decoration: none;
+    color: var(--primary-main-black);
+}
+
+.logo-subtitle{
+    color: #5c5c5c;
+    font-size: 0.85rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding: 0 5%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #838383;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
 .content {
-    height: auto;
-    width: 10%;
-    background-color: var(primary-green);
+    height: 50vh;
+    background-color: #e5eedf;
 }
-
-
-
-
 
