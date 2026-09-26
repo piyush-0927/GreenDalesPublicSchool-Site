@@ -5,6 +5,8 @@
     --primary-main-black: #000000;
     --grey-text: #555555;
     --border-color: #e0e0e0;
+
+    --debug-color: violet;
 }   
 
 * {
@@ -57,7 +59,7 @@
 
 .logo-subtitle{
     color: #5c5c5c;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
 }
 
 .nav-links {
@@ -79,39 +81,58 @@
     min-height: 50vh;
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 20%;
+    padding: 70px 20%;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: var(--secondary-key-color);
 
     gap: 100px;
 }
 
 .hero-content-text {
-    flex: 1;
+     white-space: nowrap;
+     flex-direction: column;
 }
 
-.hero-content-text label {
+.hero-content-text p:first-child {
    font-size: 1rem;
    color: var(--primary-key-color);
 }
 
 .hero-content-text h1 {
     font-size: 56px;
+    font-family: 'Playfair Display', serif;
     line-height: 1.15;
-    max-width: 600px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    border-left: 4px solid var(--primary-key-color);
+    margin-top: 20px;
+    padding-left: 10px;
+    max-width: 100%;
+
+    white-space: wrap;
+    line-height: 1.4;
+
+    font-size: 1.2rem;
+    font-family: serif;
+    color: var(--grey-text);
 }
 
 .hero-content-image{
-    padding: 40px;
+    margin-left: 15%;
 }
 
 .hero-content-image img {
-    flex: 1;
-    max-width: 50%;
+     width: 500px;
     height: auto;
     position: relative;
     overflow: hidden;
+
+    border-radius: 2%;
 }
