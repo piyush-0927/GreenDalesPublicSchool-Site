@@ -1,7 +1,9 @@
 :root{
     --primary-key-color: #3a5a40;
+    --hover-key-color: #82b48b;
+
     --secondary-key-color: #f0f4f0;
-    --primary-main-white: #ffffff;
+    --primary-main-white: #e6e6e6;
     --primary-main-black: #000000;
     --grey-text: #555555;
     --border-color: #e0e0e0;
@@ -247,12 +249,16 @@
     font-weight: 700;
     color: #1a1a1a;
     font-family:serif;
+    
 }
 
 .about-content p {
     font-size: 1.2rem;
     color: #555555;
     line-height: 1.5;
+
+    padding-right: 10px;
+    border-right: 4px solid var(--primary-key-color);
 }
 
 .about-content .btn {
@@ -267,7 +273,7 @@
 }
 
 .about-content .btn:hover{
-    background-color: tomato;
+    background-color: var(--hover-key-color);
 }
 
 /* About Features */
@@ -296,8 +302,39 @@
     align-items: center;
 }
 
-/* responsive layout */
+.footer {
+    width: 100%;
+    height: auto;
+    color: var(--primary-main-white);
+    background-color: var(--primary-key-color);
 
+    padding: 4% 20%;
+}   
+
+.footer-container{
+
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-bottom: 6%;
+    border-bottom: 1px solid #999999;
+}
+
+.footer-title-text p {
+    margin-top: 2%;
+    color: var(--primary-main-white);
+}
+
+.quick-links{
+   display: flex;
+   flex-direction: column;
+
+   gap: 10px;
+}
+
+/* responsive layout */
 @media (max-width: 700px) {
     .navbar {
         align-items: flex-start;
