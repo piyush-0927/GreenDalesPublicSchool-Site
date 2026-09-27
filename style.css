@@ -192,6 +192,101 @@
     font-size: 1.5rem;
 }
 
+/* About Section */
+
+.about-section {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 6%;
+    gap: 50px;
+    background-color: #ffffff;
+}
+/* About Image */
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* About Content */
+.about-content {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #588157;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family:serif;
+}
+
+.about-content p {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.about-content .btn {
+    padding: 15px 25px;
+    background-color: #3a5a40;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* About Features */
+.about-features {
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.feature-icon {
+    font-size: 1rem;
+    color: #3a5a40;
+    background-color: #f0f4f0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* responsive layout */
 
 @media (max-width: 700px) {
@@ -227,5 +322,15 @@
 
     .stats {
         flex-wrap: wrap;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: end;
+        padding: 40px 5%;
+    }
+
+    .about-image img {
+        align-items: flex-end;
     }
 }
