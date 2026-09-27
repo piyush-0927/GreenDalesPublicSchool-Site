@@ -170,3 +170,38 @@
         margin: 0 auto;
     }
 }
+
+/* Stats section */
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 5%;
+    gap: 20px;
+    text-align: center;
+    line-height: 1.6;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stats-items{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+    padding: auto;
+    padding-right: 2rem;
+}
+
+.stats-items h3 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.stats-items p {
+    color: var(--grey-text);
+}
+
+.stats-icon {
+    color:var(--primary-key-color);
+    font-size: 1.5rem;
+}
+
