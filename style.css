@@ -379,4 +379,9 @@
     .about-image img {
         align-items: flex-end;
     }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 30px;
+    }
 }
