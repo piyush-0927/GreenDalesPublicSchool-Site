@@ -301,6 +301,25 @@
     justify-content: center;
     align-items: center;
 }
+/* Academics */
+.academics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #999999;
+}
+
+.academics-container {
+    padding: 0 8%;
+    display: flex;
+    gap: 40px;
+}
+
+.academics-text {
+    line-height: 1.6;
+}
 
 .footer {
     width: 100%;
