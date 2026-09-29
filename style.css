@@ -107,6 +107,7 @@
 .hero-content-text p:first-child {
    font-size: 1rem;
    color: var(--primary-key-color);
+   font-family: 'Poppins', sans-serif;
 }
 
 .hero-content-text h1 {
