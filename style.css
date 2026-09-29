@@ -76,6 +76,7 @@ html {
     margin-left: 0;
     gap: clamp(12px, 2vw, 24px);
     flex-direction: row;
+    align-items: center;
 }
 
 .nav-links a {
@@ -83,7 +84,12 @@ html {
     color: #838383;
     font-size: 18px;
     transition: color 0.3s ease;
+
 }
+.nav-links a:hover {
+    border-bottom: 4px solid var(--primary-key-color);
+}
+
 
 /* after nav bar content */
 .hero {
@@ -121,6 +127,11 @@ html {
 
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.hero-content-text p:first-child {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-subtitle {
@@ -232,6 +243,7 @@ html {
 
 
 /* About Content */
+
 .about-content {
     width: 100%;
     display: flex;
@@ -266,7 +278,7 @@ html {
     border-right: 4px solid var(--primary-key-color);
 }
 
-.about-content .btn {
+.learn-more-btn{
     padding: 15px 25px;
     background-color: #3a5a40;
     color: #ffffff;
@@ -277,7 +289,7 @@ html {
     font-weight: 500;
 }
 
-.about-content .btn:hover{
+.learn-more-btn:hover{
     background-color: var(--hover-key-color);
 }
 
@@ -335,11 +347,12 @@ html {
 }
 
 .academics-subtitle {
-    font-size: 0.85rem;
     color: var(--primary-key-color);
     text-transform: uppercase;
+
+    font-size: 0.85rem;
+    font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    font-weight: 510;
 }
 
 .academics h2 {
@@ -353,14 +366,22 @@ html {
 
 .academics-text .btn{
     padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
+
     background-color: var(--primary-key-color);
     color: #ffffff;
+
+    cursor: pointer;
     border-radius: 30px;
+
     font-size: medium;
     font-weight: 500;
     font-size: 1rem;
-    text-align: center;
+}
+
+.academics-text .btn:hover{
+    background-color: var(--hover-key-color);
 }
 
 .academics-cards {
@@ -468,5 +489,10 @@ html {
     .footer-container{
         flex-direction: column;
         gap: 30px;
+    }
+
+    /* acedemics section */
+    .academics-container {
+        flex-direction: column;
     }
 }
