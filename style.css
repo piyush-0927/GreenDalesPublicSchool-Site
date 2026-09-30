@@ -408,6 +408,8 @@ html {
     font-size: 1.1rem;
 }
 
+
+/* footer */
 .footer {
     width: 100%;
     height: auto;
@@ -421,23 +423,83 @@ html {
 
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     padding-bottom: 6%;
+   
+    font-size: .9rem;
+    gap: 10%;
+    font-family: 'Inter', sans-serif;
+
     border-bottom: 1px solid #999999;
 }
 
-.footer-title-text p {
-    margin-top: 2%;
-    color: var(--primary-main-white);
+
+.footer-bottom-elemnts {
+    display: flex;
+    row-gap: 1.5em;
+    flex-direction: column;
+
+    color: #cbd5c0;
+    font-size: 0.85rem;
 }
 
-.quick-links{
-   display: flex;
-   flex-direction: column;
+.footer-bottom-elemnts p:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
 
-   gap: 10px;
+.footer-top-text {
+    font-size: 1.0rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+
+#footer-title {
+    flex: 3;
+}
+
+#footer-quick-links,
+#footer-contact-us,
+#footer-follow-us {
+    flex: 1;
+}
+
+#footer-title h2 {
+    font-size: 1.2rem;
+}
+
+/* icon setup */
+.footer-text{
+    display: flex;
+}
+
+.footer-text i{
+    font-size: 30px;
+    margin-right: 3%;
+}
+
+
+#footer-follow-us .footer-bottom-elemnts{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+#footer-follow-us .footer-bottom-elemnts a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    text-decoration: none;
+    color: var(--primary-main-white);
+    border-radius: 50%;
 }
 
 /* responsive layout */
@@ -491,8 +553,12 @@ html {
         gap: 30px;
     }
 
-    /* acedemics section */
+    /* acedemics section
     .academics-container {
         flex-direction: column;
     }
+
+    .footer-container{
+        flex-direction: column;
+    } */
 }
