@@ -463,6 +463,10 @@ html {
     border-radius: 10px;
 }
 
+.gallery-item:last-child img {
+    object-position: center top;
+}
+
  .gallery-btn {
     border-radius: 20px;
     padding: 15px 10px;
