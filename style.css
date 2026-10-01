@@ -1,6 +1,6 @@
 :root{
     --primary-key-color: #3a5a40;
-    --hover-key-color: #82b48b;
+    --hover-key-color: rgb(130, 180, 139);
 
     --secondary-key-color: #f0f4f0;
     --primary-main-white: #e6e6e6;
@@ -471,6 +471,9 @@ html {
     object-position: center top;
 }
 
+
+.gallery
+
  .gallery-btn {
    background-color: var(--primary-key-color);
    color: #ffffff;
@@ -566,22 +569,83 @@ html {
     display: flex;
     flex-direction: row;
     gap: 20px;
-
 }
 
 #footer-follow-us .footer-bottom-elemnts a{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
    
     align-items: center;
     justify-content: center;
+    color: inherit;
     background-color: rgba(255, 255, 255, 0.1);
 
     text-decoration: none;
     color: var(--primary-main-white);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
+
+#footer-follow-us .footer-bottom-elemnts a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--primary-main-white);
+    transition: all 0.3s ease;
+}
+
+
+/* gallery image overlay */
+.image-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+    gap: 20px;
+}
+
+.overlay-image-container{
+    height: 70%;
+    width: 70%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overlay-image{
+    max-width: 85vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.overlay-close, .overlay-prev, .overlay-next {
+    width: 40px;
+    height: 40px;
+    
+    border: none;
+    cursor: pointer;
+
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-main-white);
+}
+
+.overlay-close{
+    align-self: flex-start;
+    margin-top: 4%;
+}
+
+.overlay-close:hover, .overlay-prev:hover, .overlay-next:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 /* responsive layout */
 @media (max-width: 700px) {
