@@ -25,7 +25,6 @@ html {
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden;
 
     display: flex;
     align-items: center;
@@ -90,6 +89,14 @@ html {
     border-bottom: 4px solid var(--primary-key-color);
 }
 
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--primary-key-color);
+}
 
 /* after nav bar content */
 .hero {
@@ -650,15 +657,24 @@ html {
 /* responsive layout */
 @media (max-width: 700px) {
     .navbar {
-        align-items: flex-start;
-        flex-direction: column;
+        position: relative;
+        align-items: space-between;
         gap: 16px;
         padding: 16px 24px;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        gap: 12px 18px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 24px;
+        background-color: #ffffff;
+        width: auto;
+        min-width: 200px;
+        border-radius: 4px;
+        padding: 16px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links a {
@@ -698,12 +714,36 @@ html {
         gap: 30px;
     }
 
-    /* acedemics section
-    .academics-container {
-        flex-direction: column;
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
     }
 
-    .footer-container{
-        flex-direction: column;
-    } */
+    .gallery-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+   .academics-cards {
+    grid-template-columns: 1fr;
+   }
+
+   .academics{
+    flex-direction: column;
+   }
+   
+   .academics-container {
+    flex-direction: column;
+   }
+
+   .hamburger {
+        display: block;
+        color: var(--primary-main-black);
+    }
+
+    .nav-links.active {
+        display: flex;
+    } 
+
 }
